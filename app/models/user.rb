@@ -39,7 +39,7 @@ class User < ActiveRecord::Base
 
   has_paper_trail
 
-  #def salt_first? Commenting the function as it is not being called anywhere
+  #def salt_first?  Since this function is not called anywhere, hence we are commenting it
   #  true
   #end
 
@@ -82,12 +82,12 @@ class User < ActiveRecord::Base
 
   delegate :admin?, :student?, to: :role
 
-=begin
+=begin   This function is not used anywhere, hence we have commented it
   def admin?
     role.admin?
   end
 
-  def student?
+  def student? This function is not used anywhere, hence we have commented it
     role.student?
   end
 =end
